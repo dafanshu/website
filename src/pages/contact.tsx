@@ -170,6 +170,12 @@ export default function ContactPage(props: any) {
     <IndexLayout canonical="/contact/">
       <StyledContactPage className="pattern">
         <div className="row">
+            <h1 style={{ marginBottom: '2rem' }}>Useful Links</h1>
+            <ul>
+                <li>Ask a question about Gitpod Self-Hosted: <a href="https://community.gitpod.io/">Gitpod Community Forum</a></li>
+            </ul>
+        </div>
+        <div className="row">
           {state.messageSent ? (
             <SubmissionSucess />
           ) : (
